@@ -1,0 +1,27 @@
+.searchMobile__container { 
+    display: block;
+}
+.searchMobile__container img {
+    margin: 8px;
+    width: 30px;
+    margin-right: 35px;
+}
+.searchMobile__container h2 {
+    font-weight: 600;
+    margin: 0;
+    font-size: 18px;
+}
+
+@media (max-width: 700px) {
+    .searchMobile__container {
+        display: flex;
+        justify-items: center;
+        margin-top: 50px;
+        align-items: center;
+        border-radius: 8px;
+        background-color: white;
+        height: 40px;
+        width: 180px;
+        z-index: 3;
+    }
+  }

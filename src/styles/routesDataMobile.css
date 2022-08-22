@@ -1,5 +1,13 @@
 .routesDataMobile__container{
-    display: none;
+    display: flex;
+    width: 230px;
+    height: 70px;
+    border-radius: 8px;
+    margin-top: 25px;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    z-index: 3;
 }
 .routesDataMobile__container div:first-child {
     margin-right: 30px;
@@ -8,17 +16,3 @@
     margin-right: 8px;
     font-size: 12px;
 }
-
-@media (max-width: 700px) {
-    .routesDataMobile__container {
-        display: flex;
-        width: 230px;
-        height: 70px;
-        border-radius: 8px;
-        margin-top: 25px;
-        justify-content: center;
-        align-items: center;
-        background-color: white;
-        z-index: 3;
-    }
-  }

@@ -10,7 +10,7 @@
 }
 
 .search__container {
-    display: flex;
+    display: none;
     flex-direction: column;
     margin-top: 25px;
     padding: 25px;

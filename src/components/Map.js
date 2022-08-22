@@ -90,12 +90,12 @@ const Map = (props) => {
             </Autocomplete>
             
         </div>
-        <div className='search__route-data'>
+        {/* <div className='search__route-data'>
             <label>Distancia (km):</label>
             <h3 disabled >{distance}</h3>
             <label>Tiempo (minutos):</label>
             <h3 disabled >{duration}</h3>
-        </div>
+        </div> */}
         <div className='searchButtons__container'>
             <button onClick={createRoute}>Calcular Ruta</button>
             <button onClick={clearRoute}>Volver</button>

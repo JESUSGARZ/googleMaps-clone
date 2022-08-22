@@ -8,6 +8,8 @@ const SearchMobile = (props) => {
         if (search === true) {
             const searchMobileContainer = document.querySelector('.searchMobile__container');
             searchMobileContainer.style.display = 'none';
+            const routesDataMobile = document.querySelector('.routesDataMobile__container');
+            routesDataMobile.style.display = 'none';
             const searchContainer = document.querySelector('.search__container');
             searchContainer.style.display = 'flex';
             setSearch(false)

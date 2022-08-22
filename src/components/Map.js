@@ -7,7 +7,7 @@ import Loading from './Loading';
 const center = {lat:4.689385, lng: -74.034844}
 
 const Map = (props) => {
-  const {search, setSearch} = props;
+  const {search, setSearch, distance, setDistance, duration, setDuration} = props;
   const {isLoaded} = useJsApiLoader({
     googleMapsApiKey: 'AIzaSyBiuA55ioK9NkW9D3BPMI6er3V4EPcG91I',
     libraries:['places']
@@ -15,8 +15,6 @@ const Map = (props) => {
 
   const [map, setMap] = useState(/** @type google.maps.map */ (null));
   const [directionsResponse, setDirectionsResponse] = useState(null);
-  const [distance, setDistance] = useState('');
-  const [duration, setDuration] = useState('');
   
 
   /** @type React.MutableRefObject<HTMLInputElement> */
@@ -67,6 +65,8 @@ const Map = (props) => {
     if (search === false) {
       const searchMobileContainer = document.querySelector('.searchMobile__container');
       searchMobileContainer.style.display = 'flex';  
+      const routesDataMobile = document.querySelector('.routesDataMobile__container');
+      routesDataMobile.style.display = 'flex';
       const searchContainer = document.querySelector('.search__container');
       searchContainer.style.display = 'none';
       setSearch(true) 
@@ -90,7 +90,7 @@ const Map = (props) => {
             </Autocomplete>
             
         </div>
-        <div>
+        <div className='search__route-data'>
             <label>Distancia (km):</label>
             <h3 disabled >{distance}</h3>
             <label>Tiempo (minutos):</label>

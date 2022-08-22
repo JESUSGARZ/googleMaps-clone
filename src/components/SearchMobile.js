@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles/search.css'
+import '../styles/searchMobile.css'
 
 const SearchMobile = (props) => {
     const {search, setSearch} =  props;

@@ -1,5 +1,13 @@
 .searchMobile__container { 
-    display: block;
+    display: flex;
+    justify-items: center;
+    margin-top: 60px;
+    align-items: center;
+    border-radius: 8px;
+    background-color: white;
+    height: 40px;
+    width: 180px;
+    z-index: 3;
 }
 .searchMobile__container img {
     margin: 8px;

@@ -32,9 +32,7 @@
     margin-left: 10px;
    
 }
-.searchMobileButtons__container {
-    display: none;
-}
+
 
 @media (max-width: 700px) {
     .search__container {
@@ -46,10 +44,5 @@
         height: 100%;
         width: 100%;
     }
-    .searchButtons__container {
-        display: none;
-    }
-    .searchMobileButtons__container {
-        display: flex;
-    }
+
   }

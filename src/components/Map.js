@@ -70,7 +70,7 @@ const Map = (props) => {
       const searchContainer = document.querySelector('.search__container');
       searchContainer.style.display = 'none';
       setSearch(true) 
-    }
+    } 
   }
 
 
@@ -99,10 +99,6 @@ const Map = (props) => {
         <div className='searchButtons__container'>
             <button onClick={createRoute}>Calcular Ruta</button>
             <button onClick={clearRoute}>Volver</button>
-        </div>
-        <div className='searchMobileButtons__container'>
-            <button onClick={createRoute}>Calcular Ruta</button>
-            <button onClick={clearRoute  }>Volver</button>
         </div>
       </div>
 

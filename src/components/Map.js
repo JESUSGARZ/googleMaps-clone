@@ -7,7 +7,7 @@ import Loading from './Loading';
 const center = {lat:4.689385, lng: -74.034844}
 
 const Map = (props) => {
-  const {search, setSearch, distance, setDistance, duration, setDuration} = props;
+  const {search, setSearch, setDistance, setDuration} = props;
   const {isLoaded} = useJsApiLoader({
     googleMapsApiKey: 'AIzaSyBiuA55ioK9NkW9D3BPMI6er3V4EPcG91I',
     libraries:['places']
@@ -90,12 +90,6 @@ const Map = (props) => {
             </Autocomplete>
             
         </div>
-        {/* <div className='search__route-data'>
-            <label>Distancia (km):</label>
-            <h3 disabled >{distance}</h3>
-            <label>Tiempo (minutos):</label>
-            <h3 disabled >{duration}</h3>
-        </div> */}
         <div className='searchButtons__container'>
             <button onClick={createRoute}>Calcular Ruta</button>
             <button onClick={clearRoute}>Volver</button>

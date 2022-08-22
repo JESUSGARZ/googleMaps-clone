@@ -9,7 +9,7 @@ const center = {lat:4.689385, lng: -74.034844}
 const Map = (props) => {
   const {search, setSearch} = props;
   const {isLoaded} = useJsApiLoader({
-    googleMapsApiKey: process.env.REACT_APP_GOOGLE_MAPS_API_KEY,
+    googleMapsApiKey: 'AIzaSyBiuA55ioK9NkW9D3BPMI6er3V4EPcG91I',
     libraries:['places']
   });
 

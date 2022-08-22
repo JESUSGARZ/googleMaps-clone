@@ -1,10 +1,11 @@
-# Deploy of the project
-
-You can see the project in the next link [Go to the project](https://6303f5b41b746a0008c5ad51--imaginative-kelpie-221d29.netlify.app/).
+# Maps Calculator
 ![deploy](https://subir-imagen.com/images/2022/08/22/Picture1.png)
 ![deploy](https://subir-imagen.com/images/2022/08/22/Picture2.png)
 ![deploy](https://subir-imagen.com/images/2022/08/22/Picture3.png)
 
+## Deploy of the project
+
+You can see the project in the next link [Go to the project](https://6303f5b41b746a0008c5ad51--imaginative-kelpie-221d29.netlify.app/).
 
 For the project I used the @react-google-maps/api library for react, this library allow us to create components like useJsApiLoader, GoogleMap, Marker, Autocomplete, DirectionsRenderer, and connect them with the services from the Google Maps API. For this project I worked with Places API, Maps Javascript API and Directions API from Google Maps API.
 
